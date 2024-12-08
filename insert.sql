@@ -7,6 +7,8 @@ INSERT INTO artist(ArtistID, artistname)
 VALUES(3, 'КАРМЕН');
 INSERT INTO artist(ArtistID, artistname)
 VALUES(4, 'ТЕХНОЛОГИЯ');
+INSERT INTO artist(ArtistID, artistname)
+VALUES(5, 'Metalisa');
 --update artist
 --set artistname = 'РУКИ ВВЕРХ'
 --WHERE ArtistID = 2;
@@ -19,6 +21,8 @@ INSERT INTO genre
 VALUES(2, 'Поп');
 INSERT INTO genre 
 VALUES(3, 'Техно');
+INSERT INTO genre 
+VALUES(4, 'Фолк');
 
 -- Заполняем данными таблицу альбомы
 INSERT INTO album 
@@ -29,6 +33,8 @@ INSERT INTO album
 VALUES(3, 'Кнопка', 1999);
 INSERT INTO album 
 VALUES(4, 'Гудбай', 1998);
+INSERT INTO album 
+VALUES(5, 'The best from the west', 2020);
 
 -- Заполняем данными таблицу треки
 INSERT INTO track 
@@ -45,6 +51,31 @@ INSERT INTO track
 VALUES(6, 'Странные танцы', 304, 3);
 INSERT INTO track
 VALUES(7, 'It my life', 290, 3);
+INSERT INTO track
+VALUES(8, 'my own', 120, 4);
+INSERT INTO track
+VALUES(9, 'own my', 121, 4);
+INSERT INTO track
+VALUES(10, 'my', 122, 4);
+INSERT INTO track
+VALUES(11, 'oh my god', 123, 4);
+INSERT INTO track
+VALUES(12, 'myself', 124, 4);
+INSERT INTO track
+VALUES(13, 'by myself', 125, 4);
+INSERT INTO track
+VALUES(14, 'bemy self', 126, 4);
+INSERT INTO track
+VALUES(15, 'myself by', 127, 4);
+INSERT INTO track
+VALUES(16, 'by myself by', 128, 4);
+INSERT INTO track
+VALUES(17, 'beemy', 129, 4);
+INSERT INTO track
+VALUES(18, 'premyne', 130, 4);
+--update track
+--set trackname = 'Oh My God'
+--WHERE trackid = 11;
 
 -- Заполняем данными таблицу сборники
 INSERT INTO sbornik 
@@ -95,6 +126,8 @@ INSERT INTO album_artist
 VALUES(3, 4);
 INSERT INTO album_artist
 VALUES(4, 3);
+INSERT INTO album_artist
+VALUES(5, 5);
 
 INSERT INTO artist_genre
 VALUES(1, 1);
@@ -104,7 +137,8 @@ INSERT INTO artist_genre
 VALUES(3, 3);
 INSERT INTO artist_genre
 VALUES(3, 4);
-
+INSERT INTO artist_genre
+VALUES(4, 3);
 
 -- проверим
 SELECT * FROM artist;
